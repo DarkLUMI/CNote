@@ -12,7 +12,12 @@ int main(){
 	double d = 3.1234567891011123; //similar with float but stores 15-16 digits, double比較准少用float 用%lf
 	char grade = 'C';		//single character 用%c
 	char name[] = "Bro";	//array of charterS 用%s
-	//const 過後放比如 float/int/double 就是那個之後不能更變
+	const 過後放比如 float/int/double 就是那個之後不能更變
+	scanf("%d或%f或%lf或%c或%s看你用什麽function", &funtion的名字例如int是age就放age之類); //get input from user
+	fgets(funtion的名字例如char是name就放name之類, 25<限制用多少bytes,這個限制25>, stdin); //get input from user including spaces, but when print will appear new line
+	name[strlen(name)-1] = '\0'; //get rid of new line when print, refer above line BUT NEED INCLUDE #include <string.h>
+	#include <math.h> can access to sqrt, pow, round, ceil, floor, fabs, log, sin, cos, tan
+	
 	
 	//printf("Hello %s\n", name);
 	//printf("I am %d years old\n", age);
